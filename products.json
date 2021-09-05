@@ -1,0 +1,94 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "Barbecue Salad",
+        "category": "1",
+        "price": 10.99,
+        "image": { "url": "./assets/img/plate1.png" } 
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "Barbecue Lorem",
+        "category": "2",
+        "price": 12.99,
+        "image": { "url": "./assets/img/plate1.png" } 
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "Barbecue Ipsum",
+        "category": "3",
+        "price": 12.99,
+        "image": { "url": "./assets/img/plate1.png" } 
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "Barbecue Dolor",
+        "category": "4",
+        "price": 22.99,
+        "image": { "url": "./assets/img/plate2.png" } 
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "Barbecue Salad",
+        "category": "1",
+        "price": 88.99,
+        "image": { "url": "./assets/img/plate3.png" } 
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "title": "Barbecue Lorem",
+        "category": "2",
+        "price": 32.99,
+        "image": { "url": "./assets/img/plate1.png" } 
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "title": "Barbecue Ipsum",
+        "category": "3",
+        "price": 45.99,
+        "image": { "url": "./assets/img/plate2.png" } 
+      }
+    },
+    {
+      "sys": { "id": "8" },
+      "fields": {
+        "title": "Barbecue Dolor",
+        "category": "4",
+        "price": 33.99,
+        "image": { "url": "./assets/img/plate3.png" } 
+      }
+    },
+    {
+      "sys": { "id": "9" },
+      "fields": {
+        "title": "Barbecue Salad",
+        "category": "1",
+        "price": 45.99,
+        "image": { "url": "./assets/img/plate2.png" } 
+      }
+    },
+    {
+      "sys": { "id": "10" },
+      "fields": {
+        "title": "Barbecue Lorem",
+        "category": "2",
+        "price": 33.99,
+        "image": { "url": "./assets/img/plate3.png" } 
+      }
+    }
+  ]
+}

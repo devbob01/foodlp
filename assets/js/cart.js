@@ -15,14 +15,14 @@ let buttonDOM = []
 class Products {
     async getProduct(){
        try {
-           let resullt = await fetch("product.json")
+           let resullt = await fetch("products.json")
            let data = await resullt.json()
 
            let products = data.items
            products = products.map(item =>{
                const {title, category, price} = item.fields
                const{id} = item.sys
-               const image = item.fields.image.fields.file.url
+               const image = item.fields.image.url
                return { title, category, price, id, image}
            })
            return products
@@ -85,8 +85,10 @@ class UI{
                 this.setCartValues(cart)
 
                 //display cart item
-                this.addcartItems(cartItem)              
-
+                this.addcartItems(cartItem)     
+                
+                 //show cart
+                 this.showCart()
 
             })
         
@@ -169,16 +171,16 @@ class UI{
                 cartContent.removeChild(removeItem.parentElement.parentElement.parentElement)
                 this.removeItem(id)
             }
+
             else if( event.target.classList.contains("fa-plus-square")){
                 let addAmount = event.target
                 let id = addAmount.dataset.id
-                console.log(addAmount)
 
                 let tempItem =cart.find(item => item.id === id)
                 tempItem.amount = tempItem.amount + 1
                 Storage.saveCart(cart)
                 this.setCartValues(cart)
-                addAmount.nextElementSibling.innerc = tempItem.amount              
+                addAmount.nextElementSibling.innerText = tempItem.amount              
             }
 
             else if( event.target.classList.contains("fa-minus-square")){
@@ -192,10 +194,9 @@ class UI{
                     lowerAmount.previousElementSibling.innerText = tempItem.amount
                 }
                 else{
-                    cartContent.removeChild(lowerAmount.parentElement.parentElement)
+                    cartContent.removeChild(lowerAmount.parentElement.parentElement.parentElement)
                     this.removeItem(id)
                 }
-
             }
         })
     }
@@ -262,3 +263,5 @@ document.addEventListener("DOMContentLoaded",()=>{
     })
 
 })
+
+

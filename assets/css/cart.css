@@ -1,5 +1,5 @@
 :root {
-    --primaryColor: #f09d51;
+    --primaryColor: #ff7b00;
     --mainWhite: #fff;
     --mainGrey: #ececec;
     --mainSpacing: 0.1rem;
@@ -14,16 +14,15 @@
 
 .cart-items {
     position: absolute;
-    top: -10px;
-    right: -8px;
-    background: var(--primaryColor);
-    padding: 0 5px;
-    border-radius: 50%;
-    color: var(--mainWhite);
+    top: -5px;
+    right: -12px;
+    color: var(--primaryColor);
+    line-height: 15px;
+    font-size: 15px;
 }
 
 /* --------------- Products ---------------- */
-.product{
+.product {
     padding: 15px;
     background-color: #fff;
     box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px;
@@ -40,6 +39,7 @@
 .product.active-food {
     display: block;
 }
+
 
 .img-container {
     text-align: center;
@@ -60,25 +60,26 @@
     font-size: 1.6rem;
 }
 
-.bag-btn i, .bag-btn span{
+.bag-btn i,
+.bag-btn span {
     padding: 10px;
 }
 
-.bag-btn i span{
+.bag-btn i span {
     margin-left: 5px;
 }
 
 .bag-btn:hover {
-color: var(--mainWhite);
+    color: var(--mainWhite);
 }
 
 .product-img {
-display: block;
-margin: 0 auto;
-
+    display: block;
+    margin: 0 auto;
 }
+
 .img-container:hover .product-img {
-opacity: 0.7;
+    opacity: 0.7;
 }
 
 .product h3 {
@@ -105,8 +106,8 @@ opacity: 0.7;
     height: 100%;
     transition: var(--mainTransition);
     background: rgb(240, 157, 81, 0.5);
-    z-index: 2;
-    visibility: hidden; 
+    z-index: 200;
+    visibility: hidden;
 }
 
 .cart {
@@ -115,13 +116,14 @@ opacity: 0.7;
     right: 0;
     width: 50%;
     height: 100%;
-    overflow: scroll;
+    overflow-y: scroll;
     z-index: 3;
     background: rgb(231, 226, 221);
     padding: 15px;
     transition: var(--mainTransition);
     transform: translateX(100%);
 }
+
 .showCart {
     transform: translateX(0);
 }
@@ -134,6 +136,7 @@ opacity: 0.7;
     font-size: 2.5rem;
     cursor: pointer;
 }
+
 .cart h2 {
     text-transform: capitalize;
     text-align: center;
@@ -146,25 +149,25 @@ opacity: 0.7;
     margin: 1rem 0;
 }
 
-.cart-item .container{
+.cart-item .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
 }
 
-.cart-item .container .title{
+.cart-item .container .title {
     padding: 15px;
 }
 
-.cart-item .container .count{
+.cart-item .container .count {
     display: flex;
     align-items: center;
     justify-content: space-around;
     font-size: 1.5rem;
 }
 
-.cart-item .container .delete{
+.cart-item .container .delete {
     padding-left: 5px;
 }
 
@@ -172,35 +175,43 @@ opacity: 0.7;
     width: 80px;
     height: 80px;
 }
+
 .cart-item h4 {
     font-size: 1.5rem;
     text-transform: capitalize;
     letter-spacing: var(--mainSpacing);
 }
+
 .cart-item h5 {
     margin: 1.3rem 0;
     letter-spacing: var(--mainSpacing);
 }
+
 .item-amount {
     text-align: center;
     padding: 10px;
 }
+
 .remove-item {
     color: grey;
     cursor: pointer;
 }
-.fa-minus-square, .fa-plus-square, .fa-trash {
+
+.fa-minus-square,
+.fa-plus-square,
+.fa-trash {
     color: var(--primaryColor);
     cursor: pointer;
     font-size: 2rem;
 }
-/*---------- End of Cart Item -------------------- */
 
+/*---------- End of Cart Item -------------------- */
 .cart-footer {
-    margin-top: 2rem;
+    margin: 2rem;
     letter-spacing: var(--mainSpacing);
     text-align: center;
 }
+
 .cart-footer h3 {
     text-transform: capitalize;
     margin-bottom: 1rem;
@@ -216,10 +227,11 @@ opacity: 0.7;
     border: 1px solid var(--primaryColor);
     transition: var(--mainTransition);
     cursor: pointer;
-  }
-  .banner-btn:hover {
+}
+
+.banner-btn:hover {
     background: transparent;
     color: var(--primaryColor);
-  }
+}
 
 /* --------------- End of Cart ---------------- */
